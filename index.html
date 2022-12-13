@@ -1,65 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Simple Template</title>
-    </head>
-    <body>
-        <header>
-            <div class="header-logo">
-                <li><a href="#Home">Start Bootstrap</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Template</title>
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 5.2.3 -->
+    <link rel="stylesheet" href="style/bootstrap-5.2.3/css/bootstrap.min.css">
+    <script src="style/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5.2.3 -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#Home">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#HiddenNavbar"
+                aria-controls="HiddenNavbar" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="HiddenNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Home">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Home">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Home">Services</a></li>
+                </ul>
             </div>
-            <div class="header-menu">
-                <li><a href="#Home" style="color: #ffffff;">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Services">Services</a></li>
+        </div>
+    </nav>
+    <div class="container px-5 mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="img/content/900x400.jpg" alt="900 x 400">
             </div>
-        </header>
-        <main>
-            <div class="ads-container">
-                <div class="ads-block">
-                    <p>900 x 400</p>
-                </div>
-                <div class="ads-inform-block">
-                   <h1>Business Name or Tagline</h1>
-                   <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                   <input type="button" value="Call to Action!">
-                </div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Business Name or Tagline</h1>
+                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it,
+                    but it makes a great use of the standard Bootstrap core components. Feel free to use this template
+                    for any project you want!</p>
+                <a class="btn btn-primary" href="#CallToAction">Call to Action!</a>
             </div>
-            <div class="inform-block">
-                <p>This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+        </div>
+        <div class="card text-white bg-secondary text-center mt-5 mb-5 py-3">
+            <div class="card-body">
+                <p class="text-white m-0">This call to action card is a great place to showcase some important
+                    information or display a clever tagline!</p>
             </div>
-            <div class="card-conteiner">
-                <div class="card-styles">
-                    <h1>Card One</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                    <div class="btn-card-container">
-                        <input type="button" value="More Info">
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card One</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
+                            numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="#MoreInfo">More Info</a>
                     </div>
                 </div>
-                <div class="card-styles">
-                    <h1>Card Two</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-                    <div class="btn-card-container">
-                        <input type="button" value="More Info">
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card Two</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex
+                            natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore
+                            voluptates quos eligendi labore.</p>
                     </div>
-                </div>
-                <div class="card-styles-end">
-                    <h1>Card Three</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                    <div class="btn-card-container">
-                        <input type="button" value="More Info">
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="#MoreInfo">More Info</a>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <p>Copyrigth &copy; Your Websites 2021</p>
-        </footer>
-    </body>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card Three</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex
+                            numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" href="#MoreInfo">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark py-4">
+        <div class="container">
+            <p class="text-center text-white m-0">Copyright &copy; Your Website 2022</p>
+        </div>
+    </footer>
+</body>
 </html>
